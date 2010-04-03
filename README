@@ -1,0 +1,19 @@
+############################################################
+##                  README :                              ##
+##                         LUKS SCRIPTS                   ##
+############################################################
+
+Ces scripts permettent de monter et demonter des volumes
+chiffre grace a l'algorithme AES 256 et cryptsetup.
+
+Scripts realises par Julien RIOU pour le laboratoire linux
+de SUPINFO.
+Scripts libres de droits, vous pouvez les modifier comme bon
+vous semble.
+
+L'article original sur labo-linux.org : 
+	Pas encore en ligne.
+
+Sources :
+	http://www.rockfloat.com/howto/gentoo-dmcrypt-luks.html
+	http://www.saout.de/tikiwiki/tiki-index.php?page=EncryptHomeDirUsingLUKS
