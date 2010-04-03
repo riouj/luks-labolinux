@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Variables
+mapName="folder"
+mountDest="/home/riouj/test"
+
+# umount du dossier
+umount $mountDest
+# fermeture du mappage
+cryptsetup luksClose /dev/mapper/$mapName

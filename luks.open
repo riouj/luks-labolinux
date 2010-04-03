@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Variables
+volumePath="/root/"
+volumeName="volume.dm"
+loop="/dev/loop/0"
+mapName="folder"
+mountDest="/home/un/dossier"
+
+
+# Mise en place du volume sur la boucle
+losetup $loop $volumePath$volumeName
+# Mappage du volume sur /dev/mapper/mapName
+cryptsetup luksOpen $loop $mapName
+# Montage du volume chiffre dans le dossier de destination
+mount /dev/mapper/$mapName $mountDest
+# Confirmation que le volume est bien monte
+df -h $mountDest
